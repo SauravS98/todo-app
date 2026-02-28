@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: Arial;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* LIGHT MODE */
+.app {
+  background: linear-gradient(135deg, #667eea, #764ba2);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 50px;
+}
+
+/* DARK MODE */
+.app.dark {
+  background: #121212;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  background: white;
+  width: 380px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app.dark .container {
+  background: #1e1e1e;
+}
+
+/* TOP */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* INPUT */
+.input-container {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #667eea;
+  color: white;
+  border: none;
+}
+
+/* FILTERS */
+.filters {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* TASK ITEM */
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 10px;
+  background: #eee;
+  border-radius: 8px;
+}
+
+/* 🔥 DARK MODE FIX */
+.app.dark li {
+  background: #333;
+  color: white;
+}
+
+.app.dark li span {
+  color: white;
+}
+
+/* LIGHT MODE TEXT */
+li span {
+  color: black;
+}
+
+/* COMPLETED TASK */
+.completed {
+  opacity: 0.6;
+}
+
+/* BUTTONS */
+.actions button {
+  margin-left: 5px;
+}
+
+/* CLEAR BUTTON */
+.clear {
+  background: red;
+}
+
+/* ANIMATION */
+.fade-in {
+  animation: fade 0.3s ease-in;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
