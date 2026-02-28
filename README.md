@@ -19,7 +19,7 @@
 
 #Installation:-
 
-git clone https://github.com/yourusername/todo-app.git
+git clone https://github.com/SauravS98/todo-app.git
 cd todo-app
 npm install
 npm start
