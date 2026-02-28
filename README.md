@@ -1,6 +1,6 @@
 **React Todo App**
 
-Description- A modern Todo application built using React that helps users manage daily tasks efficiently with features like task filtering, editing, and persistent storage.
+#Description- A modern Todo application built using React that helps users manage daily tasks efficiently with features like task filtering, editing, and persistent storage.
 
 #Features:-
 - Add new tasks
